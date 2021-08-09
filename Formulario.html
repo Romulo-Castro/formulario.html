@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="Formulario.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div class="campo">
+        <h1 id="título">Cadastro de E-mail</h1>
+        <p id="subtítulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="Nome"><strong>Nome</strong></label>
+                <Input type="text" name="nome" id="nome" required>
+                </Input>
+            </div>
+
+            <div class="campo">
+                <label for="Sobrenome"><strong>Sobrenome</strong>
+                </label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="Email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" placeholder="Digite o e-mail" required>
+        </div>
+        <div class="campo">
+            <label for="Telefone"><strong>Telefone</strong></label>
+            <input type="text" placeholder="Digite o Telefone" required>
+        </div>
+        
+        <div class="campo">
+            <label for="Nascimento"><strong>Nascimento</strong></label>
+            <input type="date" required>
+        </div>
+
+        <div class="campo">
+            <label for="Sexo"><strong>Sexo</strong>
+            </label>
+            <label for="Masculino"><input type="radio" name="sexo" value="masculino">Masculino
+            </label>
+            
+            <label for="Feminino">
+                <input type="radio" name="sexo" value="Feminino">Feminino
+            </label>
+
+            <label for="Indiferente">
+                <input type="radio" name="sexo" value="Indiferente">Indiferente
+            </label>
+        </div>
+
+        <div class="campo">
+            <label><strong>Gostaria de receber promoções direto no seu e-mail?</strong></label>
+            <select name="Selecione" id="Selecione">
+                <option selected disabled value="Selecione">Selecione</option>
+                <option value="SIM">Sim</option>
+                <option value="Não">Não </option>
+            </select>
+        </div>
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione o Produto que tenha interesse:</strong></label><br><br>
+                <input type="checkbox" id="produto1" name="produto1" value="God of War">
+                <label for="produto1">God of War</label>
+                <input type="checkbox" id="produto2" name="produto2" value="The Last of Us 2">
+                <label for="produto2">The Last of Us 2</label>
+                <input type="checkbox" name="produto3" id="produto3" value="The Witcher 3">
+                <label for="produto3">The Witcher 3</label><br>
+                <input type="checkbox" name="produto4" id="produto4" value="Battlefield 1">
+                <label for="produto4">Battlefield 1</label>
+                <input type="checkbox" name="produto5" id="produto5" value="GTA V">
+                <label for="produto5">GTA V</label>
+                <input type="checkbox" name="produto6" id="produto6" value="The Shadow of the Colossus">
+                <label for="produto6">The Shadow of the Colossus</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label><strong>O que você achou dos Games?</strong></label>
+            <textarea style="width: 26em;" id="opinião" name="opinião" rows="6"></textarea>
+        </div>
+
+        <button type="submit" class="botão">Concluído</button>
+
+    </form>
+
+</body>
+</html>
